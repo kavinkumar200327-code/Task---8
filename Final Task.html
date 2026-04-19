@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Task</title>
+    <link rel="stylesheet" href="Final Task.css">
+</head>
+<body>
+    <h1>🛍 Product Dashboard</h1>
+    <div class="controls">
+        <input type="text" id="search" placeholder="Search products">
+        <select name="dropdown" id="Category">
+            <option value="all">All</option>
+            <option value="electronics">Electronics</option>
+            <option value="jewelery">Jewelery</option>
+            <option value="men's clothing">Men</option>
+            <option value="women's clothing">Women</option>
+        </select>
+            <button onclick="sortLow()">Low → High</button>
+            <button onclick="sortHigh()">High → Low</button>
+    </div>
+    <p id="loader">Loading...</p>
+    <p id="error"></p>
+    <div id="Products" class="container"></div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span onclick="closeModal()" class="close">&times;</span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+
+<script src="Final Task.js"></script>
+</body>
+</html>
